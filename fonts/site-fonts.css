@@ -1,0 +1,57 @@
+/* Onest and Playfair Display, SIL Open Font License; served locally. */
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(/fonts/font-3ccb4ee42d342f3d.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/font-5d27bd7fe4b79e94.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/font-24744bba5ddd417b.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/font-030d1bae9b38f45a.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Onest';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(/fonts/font-bee38f5b47923dbb.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/font-6021680663c58b34.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/font-1609a54fa3ad1abc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(/fonts/font-b60ffb0ee2b4e09d.ttf) format('truetype');
+}
