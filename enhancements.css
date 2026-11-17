@@ -6,7 +6,12 @@
 :where(a,button,summary,input,textarea):focus-visible{outline:2px solid #171717;outline-offset:3px}
 main a[href$="/sizechart"]{color:#595959}
 [data-couture-added]{margin:.75rem 0;color:#166534;font-size:.875rem}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .transition-transform,.transition-all{transition-property:color,background-color,border-color,opacity,filter}
+  .animate-spin,.animate-pulse,.animate-bounce{animation:none}
+  .group:hover img{transform:none}
+}
 [code-path="src/components/ProductCard.tsx:51:11"],
       [code-path="src/pages/ProductPage.tsx:97:13"]{display:none}
       [code-path="src/components/ProductCard.tsx:46:7"]{padding-top:.5rem!important;padding-bottom:0!important}
@@ -138,7 +143,7 @@ footer a:hover{text-decoration:underline;text-underline-offset:4px}
 }
 
 @keyframes page-arrive{from{opacity:.2}to{opacity:1}}
-main[code-path="src/components/Layout.tsx:209:7"]{animation:page-arrive 360ms cubic-bezier(.22,1,.36,1)}
+@media(prefers-reduced-motion:no-preference){main[code-path="src/components/Layout.tsx:209:7"]{animation:page-arrive 360ms cubic-bezier(.22,1,.36,1)}}
 @media(prefers-reduced-motion:reduce){main[code-path="src/components/Layout.tsx:209:7"]{animation:none}}
 
 /* Tablet navigation uses the same compact menu as the mobile header. */
@@ -178,6 +183,6 @@ main[code-path="src/components/Layout.tsx:209:7"]{animation:page-arrive 360ms cu
 .marketplace-notice p { margin: 24px 0; line-height: 1.7; color: #666; }
 /* Preserve the full gift certificate artwork in its shared product gallery. */
 body:has(.ozon-purchase) img[src*="stor3064_66540225"] { object-fit: contain; }
-@media (prefers-reduced-motion: reduce) { .ozon-button { transition: none; } }
+/* Background-color feedback on purchase links is non-spatial and remains enabled. */
 
 .catalog-social-note {max-width:1400px;margin:0 auto;padding:0 24px 24px;font-size:12px;line-height:1.6;color:#625d55;}
